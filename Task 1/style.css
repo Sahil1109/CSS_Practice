@@ -1,0 +1,37 @@
+.circle-animation,.circle-hover{
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 9vw;
+    height: 9vw;
+    background-color: rgb(90, 92, 221);
+    border-radius: 50%;
+    position: fixed;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    transition-duration: 2s;
+  }
+
+  @keyframes expansion {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(28);
+      background-color: springgreen;
+    }
+    100% {
+      transform: scale(1);
+      background-color: rgb(90, 92, 221);
+    }
+  }
+  .circle-animation:hover {
+    animation-name: expansion;
+  }
+
+  .circle-hover:hover {
+    transform: scale(28);
+    background-color: rgb(224, 26, 92);
+  }
