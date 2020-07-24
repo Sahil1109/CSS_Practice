@@ -6,8 +6,8 @@
     <title>Document</title>
     <style>
       .container {
-        width: 40vw;
-        height: 40vh;
+        width: 300px;
+        height: 300px;
         background: #f5c0c0;
         margin: auto;
         position: fixed;
@@ -15,26 +15,37 @@
         bottom: 0;
         left: 0;
         right: 0;
-        box-shadow: 3px 3px 10px rgb(214, 45, 172);
+        box-shadow: 2px 2px 5px rgb(11, 10, 12);
+        border-radius: 10px;
+        border: 1px solid #e9aaaa;
+      }
+      
+      .container:hover{
+        box-shadow: 4px 4px 8px rgb(26, 26, 27);
       }
       .container:hover .item1{
-            transform: translate(60px,0px) scale(0.5) rotate(30deg);
+            transform: translate(60px,0px) scale(0.5) rotate(2190deg);
             background: #f44;
             box-shadow: 5px 5px 20px rgb(0, 0, 0);
+            border-radius: 10px;
         }
         .container:hover .item2{
-            transform: translate(0px,0px) scale(0.5) rotate(30deg);
+            transform: translate(0px,0px) scale(0.5) rotate(2190deg);
             background: rgb(171, 201, 5);
             box-shadow: 5px 5px 20px rgb(0,0,0);
+            border-radius: 10px;
         }
         .container:hover .item3{
-            transform: translate(-60px,0px) scale(0.5) rotate(30deg);
+            transform: translate(-60px,0px) scale(0.5) rotate(2190deg);
             background:  rgb(6, 14, 117);;
             box-shadow: 5px 5px 20px rgb(0,0,0);
+            border-radius: 10px;
         }
+        
       .item1,
       .item2,
       .item3 {
+        border-radius: 10px;
         margin: auto;
         height: 150px;
         width: 150px;
@@ -44,7 +55,7 @@
         right: 0;
         position: absolute;
         background-color: rgb(126, 1, 49);
-        transition: all 2s ease-in-out;
+        transition:  2s ease-in-out;
       }
     </style>
   </head>
