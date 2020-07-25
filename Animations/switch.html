@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer{
+            width: 240px;
+            height: 100px;
+            border: 3px solid seagreen;
+            border-top-left-radius: 50px;
+            border-bottom-left-radius: 50px;
+            border-top-right-radius: 50px;
+            border-bottom-right-radius: 50px;
+            display: flex;
+            position: relative;
+            padding: 2px;
+            margin: auto;
+            background-color: skyblue;
+            box-shadow: 2px 2px 5px lightskyblue;
+        }
+        .inner{
+            width: 100px;
+            height: 95px;
+            border-radius: 50px;
+            margin-top: 2px;
+            background-color: royalblue;
+            transition-duration: 1s;
+            border: 1px solid rgb(117, 117, 223);
+        }
+        .inner:hover{
+            transform: translate(140px,0px);
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">
+
+        </div>
+    </div>
+</body>
+</html>
