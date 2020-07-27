@@ -4,10 +4,10 @@
   margin: 0;
   padding: 10px 0 0 0;
   list-style: none;
-  background-color: #111;
-  background-image: linear-gradient(rgb(221, 43, 43), rgb(117, 20, 20));
+  background-color: rgb(46, 81, 175);
   border-radius: 50px;
   box-shadow: 0 4px 3px #0f0f0f;
+  
 }
 
 .menu li {
@@ -20,7 +20,7 @@
   float: left;
   height: 25px;
   padding: 0 25px;
-  color: #000;
+  color: #fff;
   font-size: 20px;
   font-weight: bold;
   font-family: Raleway;
@@ -32,6 +32,7 @@
 }
 
 .menu li:hover > ul {
+ 
   display: block;
 }
 
@@ -44,13 +45,12 @@
   position: absolute;
   top: 35px;
   left: 0;
-  z-index: 99999;
-  background-color: rgb(136, 22, 22);
-  background-image: linear-gradient(rgb(221, 43, 43), rgb(117, 20, 20));
+  z-index: 1;
+  background-color: rgb(46, 81, 175);
   border-radius: 5px;
 }
 
-.menu ul li {
+.menu ul li{
   float: none;
   margin: 0;
   padding: 0;
@@ -76,20 +76,22 @@
 }
 
 .menu ul li:first-child a {
+  border-top: 2px solid black;
   border-radius: 5px 5px 0 0;
 }
 /* Triangle below a option in navbar to distinguish sublist */
-.menu ul li:first-child a:after {
+/* .menu ul li:first-child a:after {
   content: "";
   position: absolute;
   left: 30px;
   top: -8px;
   width: 0;
   height: 0;
+  border-top: none; 
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-bottom: 8px solid rgb(221, 43, 43);
-}
+  border-bottom: 8px solid rgb(46, 81, 175);
+} */
 
 .menu ul li:first-child a:hover:after {
   border-bottom-color: #04acec;
