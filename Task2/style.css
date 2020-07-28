@@ -116,7 +116,7 @@
   position: absolute;
   left: 253px;
   top: 0;
-  z-index: 1;
+  z-index: 2;
   background-color: rgb(46, 81, 175);
   border-radius: 5px;
 }
