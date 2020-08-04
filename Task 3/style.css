@@ -1,1 +1,105 @@
- 
+@import url("https://fonts.googleapis.com/css2?family=Chilanka&display=swap");
+* {
+  border: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+:root {
+  font-family: "Chilanka", cursive;
+  font-size: 16px;
+}
+
+.nav {
+  width: 100%;
+  border-bottom: 1px solid #000;
+  background-color: deepskyblue;
+  text-align: right;
+  height: 70px;
+  line-height: 70px;
+  box-shadow: 0px 2px 6px #123;
+}
+.logo {
+  text-align: left;
+  position: absolute;
+  color: white;
+  text-shadow: 1px 1px 4px #000;
+  margin-left: 10px;
+  font-weight: 900;
+  cursor: pointer;
+}
+.menu {
+  margin: 0 30px 0 0;
+}
+.menu a {
+  clear: right;
+  color: rgb(0, 0, 0);
+  margin: 0 10px;
+  line-height: 70px;
+}
+.menu a:hover {
+  font-weight: bold;
+  text-shadow: none;
+  color: black;
+}
+label {
+  margin: 0 40px 0 0;
+  font-size: 1rem;
+  line-height: 70px;
+  display: none;
+  width: max-content;
+  float: right;
+}
+#toggle {
+  display: none;
+}
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 4px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+@media only screen and (max-width: 600px) {
+  label {
+    display: block;
+    cursor: pointer;
+  }
+  .menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+  .menu a {
+    display: block;
+    border-bottom: 1px solid #000;
+    margin: 0;
+  }
+  .menu a:hover {
+    clear: right;
+    font-weight: bold;
+    text-shadow: none;
+    background-color: rgba(43, 167, 179, 0.3);
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 1px 6px #123;
+    line-height: 70px;
+  }
+  #toggle:checked + .menu {
+    display: block;
+  }
+  .change .bar1 {
+    opacity: 0;
+  }
+  .change .bar3 {
+    opacity: 0;
+  }
+}
