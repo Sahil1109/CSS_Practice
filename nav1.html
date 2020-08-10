@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      header {
+        width: 100%;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        background: rgb(255, 0, 47);
+        color: #ccc;
+      }
+
+      .logo {
+        width: 100%;
+      }
+      .logo img {
+        border-radius: 50px;
+        margin-top: 7px;
+      }
+
+      .nav {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        padding: 10px;
+        margin-right: 10px;
+        border: 1px solid transparent;
+        background-color: white;
+        border-radius: 50px;
+      }
+
+      .navlink {
+        list-style: none;
+        margin: 0;
+      }
+
+      .navlink a {
+        color: black;
+        text-decoration: none;
+        font-size: 1rem;
+        margin-right: 5px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+        position: relative;
+        font-weight: 700;
+        padding-right: 10px;
+      }
+      .nav img {
+        height: 16px;
+        width: 16px;
+      }
+      .span {
+        margin-top: 10px;
+      }
+      .navlink.info,
+      .navlink.help,
+      .navlink.shop,
+      .navlink.what,
+      a {
+        display: none;
+      }
+
+      @media screen and (min-width: 500px) {
+        .navlink a {
+          flex-flow: row;
+        }
+        span {
+          margin-left: 5px;
+        }
+        .donate {
+          border: 1px solid transparent;
+          border-radius: 50px;
+          background-color: rgb(255, 0, 47);
+          color: white;
+        }
+        .navlink.donate a {
+          color: white;
+          font-weight: bold;
+        }
+        .donate img {
+          display: none;
+        }
+      }
+      @media screen and (min-width: 1040px) {
+        .navlink.info,
+        .navlink.help,
+        a {
+          display: block;
+        }
+      }
+      @media screen and (min-width: 1200px) {
+        .navlink.menu,
+        .navlink.search a {
+          display: none;
+        }
+        .navlink.shop,
+        .navlink.what,
+        a {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="logo">
+        <img
+          src="https://media-exp1.licdn.com/dms/image/C560BAQErKufJERTiYQ/company-logo_200_200/0?e=2159024400&v=beta&t=TVp3_Le3q8VaNevR90D1eXNXxSnhfJyk_jukcCOGwBA"
+          height="70px"
+          width="70px"
+        />
+      </h1>
+      <ul class="nav">
+        <li class="navlink info">
+          <a href="#">Information and support</a>
+        </li>
+        <li class="navlink help">
+          <a href="#">How you can help</a>
+        </li>
+        <li class="navlink shop">
+          <a href="#">Shop</a>
+        </li>
+        <li class="navlink what">
+          <a href="#">What we do</a>
+        </li>
+        <li class="navlink menu">
+          <a href="#"
+            ><img
+              src="https://img.icons8.com/material-sharp/100/000000/menu.png"
+            /><span>MENU</span></a
+          >
+        </li>
+        <li class="navlink search">
+          <a href="#"
+            ><img
+              src="https://img.icons8.com/android/24/000000/search.png"
+            /><span>SEARCH</span></a
+          >
+        </li>
+        <li class="navlink donate">
+          <a href="#"
+            ><img
+              src="https://img.icons8.com/material-outlined/48/000000/like.png"
+            /><span>DONATE</span></a
+          >
+        </li>
+      </ul>
+    </header>
+  </body>
+</html>
