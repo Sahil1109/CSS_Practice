@@ -1,0 +1,99 @@
+* {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+ul {
+  list-style-type: none;
+}
+ul li a {
+  text-decoration: none;
+  color: black;
+}
+img {
+  background-color: white;
+  border: 1px solid black;
+}
+nav.greedy {
+  position: relative;
+  display: flex;
+  height: 32px;
+  align-items: center;
+  margin: 0px 10px;
+  border: 1px solid black;
+}
+ul li img {
+  border: none;
+}
+
+nav.greedy h1 {
+  display: flex;
+  align-items: center;
+  color: white;
+  background: #0e4dd6;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+nav.greedy button {
+  transition: all 0.4s ease-out;
+  outline: 0;
+  border: 0;
+  color: white;
+  font-size: 1.7rem;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+}
+nav.greedy ul.links li.user a {
+  border: none;
+}
+nav.greedy ul.links {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+  overflow: hidden;
+}
+nav.greedy ul.links li {
+  flex: none;
+  padding: 1rem;
+}
+nav.greedy ul.links li a {
+  font-size: 1.7rem;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+}
+.search {
+  font-size: 1.7rem;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+}
+
+ul.hidden-links {
+  position: absolute;
+  background: #d8d8d8;
+  right: 0;
+  top: 100%;
+}
+
+ul.hidden-links li a {
+  color: #404040;
+  padding-right: 1rem;
+  text-decoration: none;
+}
+
+ul.hidden-links.hidden {
+  display: none;
+}
+
+ul.hidden-links li {
+  padding: 1rem;
+}

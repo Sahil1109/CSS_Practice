@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 10px;
+        padding: 0px;
+        box-sizing: border-box;
+        color: white;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 24px;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      .container {
+        width: 600px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
+      }
+      .header {
+        grid-column: 1 /-1;
+        grid-row: 1 /2;
+        background-color: gray;
+        padding: 30px;
+      }
+      .sidebar {
+        grid-row: 2 /4;
+        grid-column: 1/2;
+        background-color: black;
+        padding: 30px;
+      }
+      .content {
+        grid-row: 2 /4;
+        grid-column: 2/5;
+        background-color: black;
+        padding: 30px;
+      }
+      .sidebar-2 {
+        grid-row: 2 /4;
+        grid-column: 5/-1;
+        background-color: rgb(136, 107, 107);
+        padding: 30px;
+      }
+      .footer {
+        grid-row: 4 /5;
+        grid-column: 1/-1;
+        background-color: gray;
+        padding: 30px;
+      }
+      @media only screen and (max-width: 300px) {
+        .sidebar {
+          grid-row: 2 /3;
+          grid-column: 1/-1;
+          background-color: black;
+          padding: 30px;
+        }
+        .content {
+          grid-row: 3 /4;
+          grid-column: 1/-1;
+          background-color: black;
+          padding: 30px;
+        }
+        .sidebar-2 {
+          grid-row: 4 /5;
+          grid-column: 1/-1;
+          background-color: rgb(136, 107, 107);
+          padding: 30px;
+        }
+        .footer {
+          grid-row: 6 /-1;
+          grid-column: 1/-1;
+          background-color: gray;
+          padding: 30px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">Header</div>
+      <div class="sidebar">Sidebar</div>
+      <div class="content">
+        Content<br />Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+      </div>
+      <div class="sidebar-2">Sidebar 2</div>
+      <div class="footer">Footer</div>
+    </div>
+  </body>
+</html>
